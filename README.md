@@ -1,5 +1,5 @@
-Json Defiler
-============
+Node Json Defiler
+=================
 
 Recursively merge files in a directory into a single json object.
 Useful for breaking out config files into separate folders.
