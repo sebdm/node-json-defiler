@@ -4,6 +4,8 @@ Node Json Defiler
 Recursively merge files in a directory into a single json object.
 Useful for breaking out config files into separate folders.
 
+[![Build Status](https://travis-ci.org/psirenny/node-json-defiler.png?branch=master)](https://travis-ci.org/psirenny/node-json-defiler)
+
 Installation
 ------------
 
