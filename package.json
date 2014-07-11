@@ -1,0 +1,32 @@
+{
+  "author": "Dennis Torres <djtorres0@gmail.com",
+  "dependencies": {
+    "findit": "^2.0.0",
+    "traverse": "^0.6.6"
+  },
+  "description": "Recursively merge files in a directory into a single json object.",
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "gulp": "^3.8.6",
+    "gulp-rimraf": "^0.1.0",
+    "mocha": "^1.20.1"
+  },
+  "keywords": [
+    "directory",
+    "file",
+    "json",
+    "merge"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "json-defiler",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/psirenny/node-json-defiler.git"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha test"
+  },
+  "version": "0.1.0"
+}
