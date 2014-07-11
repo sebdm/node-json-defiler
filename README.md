@@ -13,7 +13,7 @@ Usage
 -----
 
     var defiler = require('json-defiler');
-    var json = defiler('/path/to/dir');
+    var json = defiler('/path/to/dir').json;
 
 Files named `index.*` do not generate new keys in the json object.
 
