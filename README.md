@@ -1,5 +1,5 @@
-Node Json Defiler
-=================
+Json Defiler
+============
 
 Recursively merge files in a directory into a single json object.
 Useful for breaking out config files into separate folders.
@@ -31,15 +31,26 @@ Folder structure:
       +-- baz/
         +-- a.json
         +-- b.json
+      +-- qux/
+        +-- index.js
 
 Defiler output:
 
     {
-      "foo": {
-        "bar": { /* index.json */ },
-        "baz": {
-          "a": { /* a.json */},
-          "b": { /* b.json */ }
+      "json": {
+        "foo": {
+          "bar": { /* index.json */ },
+          "baz": {
+            "a": { /* a.json */},
+            "b": { /* b.json */ }
+          },
+          "qux": { /* index.js */ }
         }
       }
     }
+
+Options
+-------
+
+**split** - If set to true, files will be separated by their extension.
+Otherwise, all files will be merged into the returned `json` property.
