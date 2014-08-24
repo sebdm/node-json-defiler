@@ -22,7 +22,7 @@ module.exports = function (options, callback) {
     var property = path.basename(file, path.extname(file));
     var keys = path.dirname(file);
     keys = path.relative(options.dir, keys);
-    keys = keys.split(path.sep);
+    keys = keys ? keys.split(path.sep) : [];
     keys = [namespace].concat(keys);
     if (property !== 'index') keys.push(property);
     traverse(result).set(keys, require(file));
